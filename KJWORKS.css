@@ -20,14 +20,14 @@
 .btn-brand {
 	background-color: black;
 	border: 3px solid #000;
-	color: orange;
+	color: white;
 
 }
 
 .btn-brand:hover {
 	background-color: transparent;
-	color: black;
-	border-color: black;
+	color: orange;
+	border-color: orange;
 
 }
 
@@ -37,3 +37,45 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.card-img-top {
+width: 50%;
+}
+.card {
+	padding: 25px 20px;
+	border: 2px solid black;
+	transition: all ease-in .4s;
+	background-color: black;
+	
+}
+
+.card:hover {
+	box-shadow: 0 0 45px 0 black ;
+	transform: scale(1.1);
+	background: lightsalmon;
+	border-color: #000;
+}
+
+.card:hover .card-title,
+.card:hover .card-text{
+	color: blue;
+}
+
+section {
+	padding: 100px 0;
+}
+
+#sugpon h2 {
+	font-family:'Times New Roman', Times, serif ;
+	font-size: 65px;
+	color: black;
+	margin-bottom: 30px;
+
+
+}
+
+#about img{
+	border: 7px solid black;
+	border-radius: 5px;
+}
+
