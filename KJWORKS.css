@@ -79,3 +79,239 @@ section {
 	border-radius: 5px;
 }
 
+/* ABOUT SECTION */
+#about {
+    background: linear-gradient(135deg, #022020, #044040); /* smoother gradient */
+    padding: 40px 20px;
+    margin-top: 80px;
+    color: #e0f7ef; /* softer white for better contrast */
+}
+
+#about img {
+    border: 6px solid #e7c504; /* teal green - more subtle */
+    border-radius: 10px;
+    margin: 40px auto;
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* depth */
+}
+
+#about .btn-brand {
+    background-color: #e7c504 !important; /* soft green-teal */
+    color: #012a2a !important; /* dark teal for readability */
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    margin-top: 30px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#about .btn-brand:hover {
+    background-color: #cd8e19 !important;
+    color: #043923 !important;
+}
+
+
+/* TESTIMONIALS */
+.wew {
+    width: 65px;
+}
+
+.testimonials {
+    border: 2px solid #3d5a40; /* toned-down earthy green */
+    padding: 20px;
+    margin: 20px;
+    background-color: #f7fdf8; /* very light green tint */
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials:hover {
+    transform: scale(1.05);
+    color: #e7c504; /* earthy walnut brown for text */
+    border-color: #9cef01; /* mossy green for border */
+    background-color: #05515a; /* soft beige background for warm contrast */
+}
+
+
+#reviews h2 {
+    margin-top: 50px;
+    font-size: 55px;
+    color: #244d2c; /* deep earthy green */
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* FAQ SECTION */
+#faq {
+    background-color: #0b1e1e; /* deep teal for consistency */
+    padding: 60px 20px;
+    margin-top: 50px;
+    color: #e4f2ee; /* light but soft text */
+}
+
+#faq h2 {
+    color: #20c997; /* modern teal accent */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-button {
+    background-color: #123c3c !important; /* dark muted background */
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    color: #e4f2ee !important;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #1f5757 !important;
+    color: #ffffff !important;
+}
+
+.accordion-button:hover {
+    background-color: #20c997 !important;
+    color: #011c1c !important;
+}
+
+.accordion-body {
+    border-left: 4px solid #20c997;
+    background-color: #0f2e2e !important;
+    color: #dcebe6;
+    padding: 15px 20px;
+}
+
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg,#052322, #1e221d); /* subtle gradient for depth */
+    padding: 60px 30px;
+    color: #e6eae4; /* soft, readable off-white */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer .footer-column {
+    flex: 1 1 200px;
+    min-width: 220px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #a3d977; /* match hover color for visual consistency */
+}
+
+#footer ul.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+#footer ul.list-unstyled li a {
+    color: #cfd8d0; /* muted light gray-green */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#footer ul.list-unstyled li a:hover {
+    color: #a3d977; /* soft green accent */
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: auto !important;
+    }
+    #banner p{
+        text-align: center;
+    }
+    
+    #banner h1,
+    #sugpon h2 {
+        font-size: 40px !important;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-top {
+        width: 50px; /* slightly larger for better visibility */
+    }
+
+    .card {
+        width:80%;
+        margin-bottom: 15px;
+        margin: 0 auto;
+    }
+
+    #about {
+        margin-top: 30px !important;
+    }
+    #about img {
+        height: 300px !important;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    section, #footer {
+        padding: 40px 20px !important;
+    }
+
+    #services .card {
+        margin-top: 20px !important;
+    }
+    #reviews h2 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+       
+    }
+
+    #faq {
+        margin-top: 20px;
+       
+    }
+    
+}
